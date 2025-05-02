@@ -1,0 +1,7 @@
+ime=input("Unesite ime: ")
+prezime = input("Unesite prezime: ")
+dob=int(input("Unesite godine: "))
+print(ime, " ", prezime, " ima ", dob, " godina.")
+print(ime, prezime, "ima", dob, "godina.")
+print(f"{ime} {prezime} ima {dob} godina.")
+print(type(ime), type(prezime), type(dob))

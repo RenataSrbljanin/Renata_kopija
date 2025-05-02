@@ -1,0 +1,8 @@
+prvi_broj=int (input("Unesite prvi broj:"))
+drugi_broj = int(input("Unesite drugi broj: "))
+print(F"Zbroj: {prvi_broj+drugi_broj}")
+print(f"Razlika: {prvi_broj-drugi_broj}")
+print(f"Umnozak: {prvi_broj*drugi_broj}")
+print(f"Dijelenje {prvi_broj/drugi_broj}")
+print(f"Cjelobrojno dijeljenje: {prvi_broj//drugi_broj}")
+print(f"Ostatak: {prvi_broj%drugi_broj}")
