@@ -1,0 +1,35 @@
+ime=input("Unesite ime: ")
+prezime = input("Unesite prezime: ")
+dob=int(input("Unesite godine: "))
+print(ime, " ", prezime, " ima ", dob, " godina.")
+print(ime, prezime, "ima", dob, "godina.")
+print(f"{ime} {prezime} ima {dob} godina.")
+print(type(ime), type(prezime), type(dob))
+
+prvi_broj=int (input("Unesite prvi broj:"))
+drugi_broj = int(input("Unesite drugi broj: "))
+print(f"Zbroj: {prvi_broj+drugi_broj}")
+print(f"Razlika: {prvi_broj-drugi_broj}")
+print(f"Umnozak: {prvi_broj*drugi_broj}")
+print(f"Dijelenje {prvi_broj/drugi_broj}")
+print(f"Cjelobrojno dijeljenje: {prvi_broj//drugi_broj}")
+print(f"Ostatak: {prvi_broj%drugi_broj}")
+
+a, b, c = map(int, input().split())
+print(f"Zbroj brojeva {a}, {b} i {c} je: {a+b+c}")
+
+ime = input("Unesite ime: ")
+#prezime = input("Unesite prezimeime: ")
+dob = int(input("Unesite dob: "))
+omiljeni_broj = int(input("Unesite omiljeni broj: "))
+grad = input("Unesite grad: ")
+print(f"{ime}|{dob}|{grad}|{omiljeni_broj}")
+print(ime, dob, grad, omiljeni_broj, sep="|")
+
+# BMI
+visina =float(input("Unesite visinu u metrima:"))
+m =  float(input("Unesite masu: "))
+print(f"Vas BMI je {m/(visina*visina)}")
+
+a, b, c =map(str, input("Upisite tri rijeci: ").split())
+print(a,b,c, sep="-")

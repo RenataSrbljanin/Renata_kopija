@@ -1,7 +1,0 @@
-ime = input("Unesite ime: ")
-#prezime = input("Unesite prezimeime: ")
-dob = int(input("Unesite dob: "))
-omiljeni_broj = int(input("Unesite omiljeni broj: "))
-grad = input("Unesite grad: ")
-print(f"{ime}|{dob}|{grad}|{omiljeni_broj}")
-print(ime, dob, grad, omiljeni_broj, sep="|")

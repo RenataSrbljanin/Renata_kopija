@@ -1,37 +1,38 @@
-def povecaj_za_jedan(n):
+def a1(n):
+    n=int(n)
     return n+1
-def aktivnost_2(n):
+def a2(n):
+    n=int(n)
     if n%2==0:
-        return povecaj_za_jedan(n)
+        return a1(n)
     else: return n-1
-
-def aktivnost_3(n):
-    n=str(n)
-    n=list(n)
-    jedinica=n[-1]    
-    return jedinica
-
-def aktivnost_4(n):
-    if type(n)!="str":      
-    
-        n=str(n)
-        n=list(n)
-        x=n[len(n)-1]
-        y=n[len(n)-2]
-        n[len(n)-2]=x
-        n[len(n)-1]=y
+def a3(n):
+    n=int(n)    
+    x=str(n)
+   # x=list(n)
+    jedinica=int(x[-1])    
+    return n+jedinica    
+def a4(n):       
+    a=str(n)
+    x=a[len(a)-1]
+    y=a[len(a)-2]
+    a=list(a)
+    a[len(a)-2]=x
+    a[len(a)-1]=y
+    a=''.join(a)
+    return int(a)
    
 n=int(input())
 k=int(input())
 for i in range(k):
     ai=int(input())
-if ai==1:
-    print(povecaj_za_jedan(n))
-elif ai==2:
-    print(aktivnost_2(n))
-elif ai==3:
-    print(aktivnost_3(n))
-elif ai==4:
-    print(aktivnost_4(n))
+    if ai==1:
+        n= a1(n)
+    elif ai==2:
+        n= a2(n)
+    elif ai==3:
+        n= a3(n)
+    elif ai==4:
+        n= a4(n)
+print(n)
 
-# nije uradjena!!!
