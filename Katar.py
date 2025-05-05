@@ -9,8 +9,9 @@ for i in range(x):
         klime[k-1]=1
     else:
         klime[k-1]=0
-print(sum(klime))
-preostalo = n-sum(klime)
+suma=sum(klime)
+print(suma)
+preostalo = n-suma
 if x%2 ==0:
     print(preostalo*2-1)
 else:

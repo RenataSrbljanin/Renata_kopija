@@ -3,22 +3,25 @@ t=int(input())
 n=int(input())
 m=int(input())
 
-poeni=[]
+zamisljeniPoeni=[]
 tekst = input()
 for i in tekst.split():
-    poeni.append(int(i))
+    zamisljeniPoeni.append(int(i))
 
-print(poeni)
+print(zamisljeniPoeni)
 print("----")
-_pojedinacni=[[t,0,-n]*p] 
-# for i in range(p):
-#     moguci[i][0] = t
-#     moguci[i][1] = 0
-#     moguci[i][2] = -n
-print(_pojedinacni)
 
-def moguci_rezultati(p,t,n):
-   for i in range(p):
-       _pojedinacni.append(i*t)
+for pi in zamisljeniPoeni:
+    if pi
+# _pojedinacni=[[t,0,-n]*p] 
+# # for i in range(p):
+# #     moguci[i][0] = t
+# #     moguci[i][1] = 0
+# #     moguci[i][2] = -n
+# print(_pojedinacni)
+
+# def moguci_rezultati(p,t,n):
+#    for i in range(p):
+#        _pojedinacni.append(i*t)
     
     
