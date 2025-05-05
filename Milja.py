@@ -1,3 +1,4 @@
+# round(2.56789, 3) = 2.568 !!!!!!!!!
 
 lista=[1, 39370.1, 3280.84, 1093.61, 0.621371]
 
@@ -19,42 +20,42 @@ def konvertor(d,n,m):
         elif m==2:
             return d
         elif m==3:
-            return d*lista[2]/lista[1]
+            return round(d*lista[2]/lista[1], 3)
         elif m==4:
-            return d*lista[3]/lista[1]
+            return round(d*lista[3]/lista[1],3)
         elif m==5:
-            return d*lista[4]/lista[1]
+            return round(d*lista[4]/lista[1],3)
     elif n==3:  
         if m==1:
-            return d/lista[2]
+            return round(d/lista[2],3)
         elif m==2:
-            return d*lista[1]/lista[2]
+            return round(d*lista[1]/lista[2],3)
         elif m==3:
             return d
         elif m==4:
-            return d*lista[3]/lista[2]
+            return round(d*lista[3]/lista[2],3)
         elif m==5:
-            return d*lista[4]/lista[2]
+            return round(d*lista[4]/lista[2],3)
     elif n==4:
         if m==1:
-            return d/lista[3]
+            return round(d/lista[3],3)
         elif m==2:
-            return d*lista[1]/lista[3]
+            return round(d*lista[1]/lista[3],3)
         elif m==3:
-            return d*lista[2]/lista[3]
+            return round(d*lista[2]/lista[3],3)
         elif m==4:
             return d
         elif m==5:
-            return d*lista[4]/lista[3]
+            return round(d*lista[4]/lista[3],3)
     elif n==5:
         if m==1:
-            return d/lista[4]
+            return round(d/lista[4],3)
         elif m==2:
-            return d*lista[1]/lista[4]
+            return round(d*lista[1]/lista[4],3)
         elif m==3:
-            return d*lista[2]/lista[4]
+            return round(d*lista[2]/lista[4],3)
         elif m==4:
-            return d*lista[3]/lista[4]
+            return round(d*lista[3]/lista[4],3)
         elif m==5:
             return d
         

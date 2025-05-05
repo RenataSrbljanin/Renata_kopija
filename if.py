@@ -42,4 +42,4 @@ if t<43:
     klasa='B'
 
 else:
-    print(-c)
+    print("A")
