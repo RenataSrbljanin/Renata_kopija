@@ -1,0 +1,31 @@
+import random
+from datetime import date
+from datetime import datetime
+import statistics
+
+# n = int(input("Unesite broj: "))
+
+# r=random.randint(1,10)
+
+# if n==r:
+#     print("Bravo! Pogodili ste")
+# else: 
+#     print("Niste pogodili, bio je broj ", r)
+print()
+# danas=date.today()
+# fd=danas.strftime("%d.%m.%Y")
+# print(date.today().strftime("%d.%m.%Y"))
+
+# vremeSada=datetime.now()
+# print(vremeSada.hour)
+# if vremeSada.hour<12:
+#     print("Dobar dan")
+# else:
+#     print("idemo dalje")
+lista=[]
+for i in range(5):
+    lista.append(int(input(f"unesi {i+1}. ocjenu: ")))
+print(lista)
+
+print("Prosjek je: ", sum(lista)/len(lista))
+print("Medijan je: ", statistics.mode(lista))
