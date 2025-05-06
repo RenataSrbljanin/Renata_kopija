@@ -3,6 +3,14 @@ t=int(input())
 n=int(input())
 m=int(input())
 
+def moguci(p,t,n):
+    l=[]
+    for i in range(p):
+          for j in range(i,p):
+            for k in range(i+j,p):
+                   l.append(t*j-k*n)
+    return l
+
 zamisljeniPoeni=[]
 tekst = input()
 for i in tekst.split():
@@ -11,8 +19,10 @@ for i in tekst.split():
 print(zamisljeniPoeni)
 print("----")
 
-for pi in zamisljeniPoeni:
-    if pi
+listaMogucih=moguci(p,t,n)
+print(listaMogucih)
+# for pi in zamisljeniPoeni:
+#     if pi
 # _pojedinacni=[[t,0,-n]*p] 
 # # for i in range(p):
 # #     moguci[i][0] = t

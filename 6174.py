@@ -24,6 +24,8 @@ def kolikoPuta(k):
         else:
             x=nadjiRazliku(x)    
 def kolikoPuta_x(k):
+    if k==6174:
+        return 0
     x=nadjiRazliku(k)
     i=1
     while x!=6174 and x>999 and x<10000:
