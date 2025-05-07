@@ -1,0 +1,4 @@
+Ime, Prezime, Ocjena
+Loris, Raspolic, 4
+Renata, Srbljanin, 5
+Dragan, Srbljanin, 5
