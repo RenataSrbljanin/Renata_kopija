@@ -1,0 +1,6 @@
+Ime, Prezime, Ocjena
+Renata, Srbljanin, 4
+Mali, Preduzetnik, 5
+Vjeran, Maric, 4
+Anastasia, Srbljanin, 4
+Video, Gejmer, 2
