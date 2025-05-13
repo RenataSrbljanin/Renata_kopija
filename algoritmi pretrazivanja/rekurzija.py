@@ -47,18 +47,30 @@ def obrce_string_1(s):
         return ""
     else:
         return obrce_string_1(s[1:])+s[0]
+    
+def daLiJePalindrom(string):  # Ne radi kako treba!!!
+    if len(string)%2==0:
+        for i in range(len(string)//2+1):
+            if string[i]!=string[-i]:
+                return "NE"
+    else:
+        for i in range(len(string)//2+2):
+            if string[i]!=string[-i]:
+                return "NE"
+    return "DA"
 
-n=int(input("Unesite broj: "))
-print(f"Faktorijel od broja {n} je {faktorijel(n)}")
-#print(f"Zbroj brojeva od 1 do {n} je {sabiranje_do_broja(n)}")
-print(f"fibonaci od broja {n} je {fibonaci(n)}")
-print(f"fibonaci od broja {n} je {fibonaci_1(n)}")
+
+
+# n=int(input("Unesite broj: "))
+# print(f"Faktorijel od broja {n} je {faktorijel(n)}")
+# #print(f"Zbroj brojeva od 1 do {n} je {sabiranje_do_broja(n)}")
+# print(f"fibonaci od broja {n} je {fibonaci(n)}")
+# print(f"fibonaci od broja {n} je {fibonaci_1(n)}")
 
 s= input("Unesi string za obrtanje: ")
 print(obrce_string(s))
 print(obrce_string_1(s))
 #print(obrce_string_2(s))
+print(daLiJePalindrom(s))
 
-m=int(input("Unesite broj za zbrajanje znamenki: "))
-print(f"broj {m} ima {koliko_znamenki(m)} znamenki")
-print(koliko_znamenki(m))
+# ana
