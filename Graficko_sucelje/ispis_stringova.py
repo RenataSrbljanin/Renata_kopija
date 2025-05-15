@@ -24,7 +24,7 @@ rankovi=[]
 
 lista_sa_razlikama=[]
 for item in lista:
-    rezultati.append(item[0])
+    rezultati.append(item[0]) # punim ga sad zato sto je pre toga sortiran po opadajucem broju bodova
     lista_sa_razlikama.append([item[0], item[1], item[2], ime_prezime_polje-(len(item[1])+len(item[2]))])
     broj_cifara_bodova=len(str(item[0]))
     if broj_cifara_bodova>max_cifara_bodova:
@@ -37,7 +37,7 @@ koliko_cifara_max=len(str(len(lista_sa_razlikama)))
 # print(lista_sa_razlikama)
 # print(f'rezultati: {rezultati}')
 # print(f'rankovi: {rankovi}')
-koliko_crtica=koliko_crtica+max_cifara_bodova+ime_prezime_polje+koliko_cifara_max+3
+koliko_crtica=koliko_crtica+max_cifara_bodova+ime_prezime_polje+koliko_cifara_max+3 # ove 3 poslednje su za maximum bodove 400
 
 i=0
 print(koliko_crtica*"-")
